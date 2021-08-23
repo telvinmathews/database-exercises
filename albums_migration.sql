@@ -3,12 +3,12 @@ drop table if exists albums;
 
 CREATE TABLE albums (
                         id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-                        artist VARCHAR(50),
+                        artist VARCHAR(200),
                         name  VARCHAR(100) NOT NULL,
-                        release_date DATE,
+                        release_date year,
                         sales float,
                         genre varchar(100),
-                        content TEXT NOT NULL,
                         PRIMARY KEY (id)
 );
+
 
