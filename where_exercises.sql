@@ -1,12 +1,13 @@
 use employees;
 
-select count(*)
+select count(*), e.gender
 from employees e
 # where first_name in ('Irena', 'Vidya','Maya');
 where e.gender = 'M' and
       (e.first_name = 'Irena'
    or e.first_name = 'Vidya'
-   or e.first_name = 'Maya');
+   or e.first_name = 'Maya')
+group by e.gender;
 
 select count(*)
 from employees
