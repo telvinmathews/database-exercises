@@ -7,7 +7,7 @@ where e.gender = 'M' and
       (e.first_name = 'Irena'
    or e.first_name = 'Vidya'
    or e.first_name = 'Maya')
-group by e.gender;
+group by  e.gender;
 
 select count(*)
 from employees
